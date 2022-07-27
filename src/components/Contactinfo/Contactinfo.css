@@ -1,0 +1,13 @@
+.lastjmg{
+    height: 95vh;
+    width: 100%;
+    margin-top: 30px;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(100, 53, 219, 0), rgb(122, 119, 202)),
+                  url("../../images/automobile-3230876_640.jpg");
+    position: relative;
+    color:white;
+}
+.number{
+    color: #2ea3f2;
+}

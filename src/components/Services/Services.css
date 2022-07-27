@@ -1,0 +1,34 @@
+.MainSections{
+    width: auto;
+    background: linear-gradient(
+        to right,
+        rgb(242, 246, 249) 0%,
+        rgb(242, 246, 249) 25%,
+        rgb(255, 255, 255) 25%,
+        rgb(255, 255, 255) 100%
+    );
+    padding: 120px 0px;
+}
+
+.MainSections2{
+    width: auto;
+    background: linear-gradient(
+        to left,
+        rgb(242, 246, 249) 0%,
+        rgb(242, 246, 249) 25%,
+        rgb(255, 255, 255) 25%,
+        rgb(255, 255, 255) 100%
+    );
+    padding: 120px 0px;
+}
+
+.serviceHeading{
+    font: 18px;
+    color:#333333;
+}
+
+.links{
+    color: yellow;
+    text-decoration: none;
+    font-weight: Bold;
+}
