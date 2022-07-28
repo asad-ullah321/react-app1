@@ -8,17 +8,21 @@ import { actionCreators } from '../../state/index';
 export const Forms = () => {
   const mail = useSelector(state=>state.boxEmail);
   const dispatch= useDispatch();
-  const {emailBox, areaBox} = bindActionCreators(actionCreators, dispatch);
+  const {emailBox, areaBox, newuser} = bindActionCreators(actionCreators, dispatch);
   const content = useSelector(state=>state.areabox)
+  const users = useSelector(state=>state.newuser)
 
-  const temp =(actions)=>{
-    console.log();
-    return "<div>done</div>"
+  
+
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    const temp = {mail, content};
+    newuser(temp);
   }
   return (
     <div>
-      {temp()};
-      <form>
+      
+      <form onSubmit={handlesubmit}>
         <div class="form-group">
           <label >Email address</label>
           <input
@@ -42,8 +46,10 @@ export const Forms = () => {
             value = {content}
             onChange={(a)=>areaBox(a.target.value)}
           ></textarea>
+          <input type="submit" />
         </div>
       </form>
+      {users.map((u)=>(<div><h1>{u.mail}</h1> <h2>{u.content}</h2></div>))}
     </div>
   );
 };

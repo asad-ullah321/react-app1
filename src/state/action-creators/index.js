@@ -35,3 +35,12 @@ export const areaBox = (value1) => {
         })
     }
 }
+
+export const newuser = (value)=>{
+    return (dispatch)=> {
+        dispatch({
+            type:"newuser",
+            payload: value
+        })
+    }
+}
