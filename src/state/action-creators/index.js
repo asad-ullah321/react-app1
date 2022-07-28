@@ -15,3 +15,23 @@ export const decreament =(amount) =>{
         })
     }
 }
+
+export const emailBox = (value)=>{
+    return (dispatch)=>{
+        dispatch({
+            type:"new",
+            payload: value
+        })
+    }
+}
+
+
+
+export const areaBox = (value1) => {
+    return (dispatch) => {
+        dispatch({
+            type:"newcontent",
+            payload: value1
+        })
+    }
+}
